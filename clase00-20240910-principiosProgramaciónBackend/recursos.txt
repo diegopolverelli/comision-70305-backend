@@ -21,13 +21,13 @@ https://es.javascript.info/
 https://developer.mozilla.org/en-US/docs/Learn/JavaScript
 https://www.w3schools.com/js/default.asp
 
-Temas de JavaScript que les sugieron "refrescar" / repasar:
-- metodos de arrays: reduce, map, find, findIndex, forEach, includes
+Temas de JavaScript que les sugiero "refrescar" / repasar:
+- métodos de arrays: reduce, map, find, findIndex, forEach, includes
 - desestructuración, principalmente de objetos
 - operador rest
 - operador spread 
 - async/await para resolución de promesas
-- clases: class ,constructor, métodos, etc. Sintáxis básica 
+- clases: class ,constructor, métodos, etc. Sintaxis básica 
 
 Playlist clase (fundamental...!!!):
 https://open.spotify.com/playlist/5GX2x4fbBnJKRO0qsg2Gm8?si=ec273740e52b473e

@@ -1,0 +1,48 @@
+Encuesta:
+https://forms.gle/kFQmtRHv196aDdjk6
+
+Repositorio Material clases síncronas:
+https://github.com/diegopolverelli/comision-70305-backend
+
+
+https://swapi.dev/
+https://api-ninjas.com/
+https://reqres.in
+
+
+apiKey Ninja: pLq21i0GEvrvyeO3I1OERA==4KqZqwdEQxUDCD7E
+
+https://nodejs.org/en
+https://code.visualstudio.com/
+https://www.postman.com/
+https://roadmap.sh/backend?r=backend-beginner
+
+https://es.javascript.info/
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript
+https://www.w3schools.com/js/default.asp
+
+
+Playlist clase (fundamental...!!!):
+https://open.spotify.com/playlist/5GX2x4fbBnJKRO0qsg2Gm8?si=ec273740e52b473e
+
+
+
+Expresiones Regulares:
+https://www.youtube.com/watch?v=wfogZfIS03U     Expresiones Regulares 
+
+https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_expressions/Cheatsheet
+
+Ejemplos de expresiones regulares que sirven para validar emails (ej. para
+correr con JavaScript):
+// Patrón corto
+let reCorto = /\S+@\S+\.\S+/
+// Patrón Medio
+let reMedio = /^(([^<>()\[\]\.,;:\s@\”]+(\.[^<>()\[\]\.,;:\s@\”]+)*)|(\”.+\”))@(([^<>()[\]\.,;:\s@\”]+\.)+[^<>()[\]\.,;:\s@\”]{2,})$/
+// Patrón Largo
+let reLargo = /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/
+let res=reCorto.test('prueba@correo.com') // true
+console.log(res)
+res=reMedio.test('prueba@correo.com') // true
+console.log(res)
+res=reLargo.test('prueba@correo.com') // true
+console.log(res)
