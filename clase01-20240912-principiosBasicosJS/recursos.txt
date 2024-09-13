@@ -26,6 +26,10 @@ Playlist clase (fundamental...!!!):
 https://open.spotify.com/playlist/5GX2x4fbBnJKRO0qsg2Gm8?si=ec273740e52b473e
 
 
+ECMA SCRIPT:
+https://ecma-international.org/technical-committees/tc39/
+https://github.com/tc39/proposals/tree/main
+
 
 Expresiones Regulares:
 https://www.youtube.com/watch?v=wfogZfIS03U     Expresiones Regulares 
