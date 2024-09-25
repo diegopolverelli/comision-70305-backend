@@ -1,0 +1,21 @@
+{
+  "name": "02-npm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "dev": "nodemon ./src/app.js",
+    "prueba": "dir", 
+    "prueba2": "dir /s",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cookie-parser": "^1.0.0",
+    "express": "^3.0.1",
+    "moment": "^2.30.1"
+  }
+}
