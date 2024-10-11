@@ -1,0 +1,16 @@
+<h2>Heroes</h2>
+<hr>
+
+{{#if nombre}}
+    <h3>Hola {{nombre}}</h3>
+{{else}}
+    <h3>Hola...!!!</h3>
+{{/if}}
+
+<ul>
+    {{#each heroes}}
+        <li>
+            <a href="/heroe/{{id}}">{{name}}</a>
+        </li>
+    {{/each}}
+</ul>
