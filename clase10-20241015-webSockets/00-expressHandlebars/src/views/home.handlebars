@@ -1,0 +1,15 @@
+<h2>Home Page</h2>
+<hr>
+{{>menu}}
+
+{{#if nombre}}
+    <h3>Hola {{nombre}}...!!!</h3>
+{{else}}
+    <h3>Bienvenido...!!!</h3>
+{{/if}}
+
+<ul>
+    {{#each usuarios}}
+        <li>{{nombre}}</li>
+    {{/each}}
+</ul>
