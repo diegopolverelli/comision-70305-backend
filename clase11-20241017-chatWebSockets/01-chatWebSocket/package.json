@@ -1,0 +1,25 @@
+{
+  "name": "01-chatwebsocket",
+  "version": "1.0.0",
+  "type": "module",
+  "engines": { "node": "16.x" },
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "dev": "node --watch ./src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.6"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "express-handlebars": "^8.0.1",
+    "socket.io": "^4.8.0"
+  }
+}

@@ -1,0 +1,35 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+}
+
+h2{
+    margin: 10px;
+}
+
+input[type="text"]{
+    margin: 10px;
+} */
+
+#mensajes{
+    margin-top: 15px;
+    width: 90%;
+    height: 350px;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 5px #333 inset;
+    padding: 5px;
+    background-color: cadetblue;
+}
+
+.mensaje{
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: wheat;
+    /* display: block;
+    width: fit-content; */
+    display: block;
+    width: fit-content;
+    margin: 0px;
+    margin-top: 3px;
+}
