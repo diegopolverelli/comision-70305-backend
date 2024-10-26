@@ -1,0 +1,26 @@
+[
+     {
+          "id": 1,
+          "nombre": "Java Script I",
+          "horas": 14,
+          "docente": "Carlos Miranda"
+     },
+     {
+          "id": 2,
+          "nombre": "Java Script II",
+          "horas": 20,
+          "docente": "Carlos Miranda"
+     },
+     {
+          "id": 3,
+          "nombre": "Base de Datos I",
+          "horas": 18,
+          "docente": "Jimena Lopez"
+     },
+     {
+          "id": 4,
+          "nombre": "Base de Datos II",
+          "horas": 18,
+          "docente": "Jimena Lopez"
+     }
+]
