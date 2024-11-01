@@ -1,0 +1,10 @@
+<h2>Página Alumnos</h2>
+<hr>
+
+<ul>
+    {{#each alumnos}}
+        <li>
+            <a href="/alumno/{{_id}}">{{nombre}}</a>
+        </li>
+    {{/each}}
+</ul>

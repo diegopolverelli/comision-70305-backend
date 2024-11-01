@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "a5156af5-af64-4608-86da-d84ac9c74efa",
+		"name": "Primera Entrega Proyecto Final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "21069557"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"email\":\"diegopolverelli80@gmail.com\", \"password\":\"123\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/sessions/login"
+					},
+					"response": []
+				},
+				{
+					"name": "Current",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"email\":\"diegopolverelli@hotmail.com\", \"password\":\"123\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/sessions/current"
+					},
+					"response": []
+				},
+				{
+					"name": "Login Administrador ({\"email\":\"adminCoder@coder.com\", \"password\":\"adminCod3r123\"})",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"email\":\"adminCoder@coder.com\", \"password\":\"adminCod3r123\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/sessions/login"
+					},
+					"response": []
+				},
+				{
+					"name": "Registro Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"first_name\":\"Diego\",\"last_name\":\"Polverelli\",\"email\":\"diegopolverelli80@gmail.com\",\"age\":46,\"password\":\"123\",\"role\":\"user\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/sessions/register"
+					},
+					"response": []
+				},
+				{
+					"name": "Logout Usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/sessions/logout"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Carts",
+			"item": [
+				{
+					"name": "Crear Carrito",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "http://localhost:8080/api/carts"
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar producto a carrito creado",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/carts/66b2c4b14a674e03433d7b2f/product/66b047edb3e9b924115c56ac"
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar un Carrito guardado",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/carts/66a84931ae36ac606d26b142"
+					},
+					"response": []
+				},
+				{
+					"name": "Comprar Carrito",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "localhost:8080/api/carts/66b2c4b14a674e03433d7b2f/purchase"
+					},
+					"response": []
+				},
+				{
+					"name": "Modifica un cart: enviar products [{product, quantity}] por body",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"products\":[\r\n        {\r\n            \"product\":\"66d932007434e6329ab2aeba\", \"quantity\":100\r\n        },\r\n                {\r\n            \"product\":\"66d93081eef3a26be8ab0324\", \"quantity\":500\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/carts/66e2524088a422bf4f105fc9"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar un producto de un carrito",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/api/carts/66e2524088a422bf4f105fc9/product/66d68040816ca9c2ef451e5c"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Crear Producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"title\":\"Clavos 999\", \"stock\":2, \"price\":3, \"description\":\"clavos\", \"category\":\"Herramientas\", \"code\":55443, \"thumbnail\":\"[]\", \"status\":true}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/products/"
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Productos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/products/"
+					},
+					"response": []
+				},
+				{
+					"name": "Lista un producto, por _id Mongo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8080/api/products/66d932007434e6329ab2aeba"
+					},
+					"response": []
+				},
+				{
+					"name": "Modifica un producto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"description\":\"MODIFICACION REALIZADA...!!!\", \"price\":7000}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/api/products/66de10104bf5b3210484c349"
+					},
+					"response": []
+				},
+				{
+					"name": "Elimina un producto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:8080/api/products/66de10104bf5b3210484c349"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
