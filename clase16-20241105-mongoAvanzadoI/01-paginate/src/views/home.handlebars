@@ -1,0 +1,26 @@
+<h2>Usuarios</h2>
+<hr>
+<ul>
+    {{#each usuarios}}
+        <li>
+            {{code}}) {{first_name}} {{last_name}}
+        </li>
+    {{/each}}
+</ul>
+
+<br>
+<a href="/usuarios/?page=1">Pág.1</a>
+
+{{#if hasPrevPage}}
+    <a href="/usuarios/?page={{prevPage}}">Prev.Pág.</a>
+{{else}}
+    <a href="/usuarios/?page={{prevPage}}" class="disabled">Prev.Pág.</a>
+{{/if}}
+
+{{#if hasNextPage}}
+    <a href="/usuarios/?page={{nextPage}}">Next.Pág.</a>
+{{else}}
+    <a href="/usuarios/?page={{nextPage}}" class="disabled">Next.Pág.</a>
+{{/if}}
+
+<a href="/usuarios/?page={{totalPages}}">Ult.Pág.</a>

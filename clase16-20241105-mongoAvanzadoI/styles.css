@@ -1,0 +1,82 @@
+html{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-size: 62.5%;  /* 1rem = 10px*/
+}
+
+body{
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Estilos para el fondo de la página */
+body {
+  background-color: #f2f2f2;
+}
+
+/* Estilos para la fuente y tamaño de fuente */
+body, h3, h4, p, li, a, input {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Estilos para el título */
+h3 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Estilos para la lista de usuarios */
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para los elementos de la lista de usuarios */
+  li {
+    margin-bottom: 1rem;
+  }
+  
+/* Estilos para los enlaces de paginación */
+a {
+  color: blue;
+  text-decoration: none;
+  margin-right: 2rem;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+/* Estilos para los enlaces de paginación al pasar el cursor sobre ellos */
+a:hover {
+  color: darkblue;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+  /* Estilos para los enlaces de paginación inactivos */
+  span {
+    color: gray;
+    margin-right: 2rem;
+  }
+  
+  /* Estilos para el campo de entrada de página */
+  input {
+    width: 5rem;
+    margin-left: 1rem;
+  }
+  
+
+  .disabled {
+    pointer-events: none;
+    /* Evita los clics */
+    color: gray;
+    /* Cambia el color para parecer deshabilitado */
+    text-decoration: none;
+    /* Remueve el subrayado */
+  }
