@@ -1,0 +1,1 @@
+export const mongourl="mongodb+srv://backend70305:CoderCoder@cluster0.ot7vj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0&dbName=clase17"
